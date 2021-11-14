@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2</title>
+    <style>
+     #main {
+            width: 660px;
+            padding: 50px;
+            margin: 150px auto;
+            box-shadow: 0 0 15px rgb(0, 0, 0);
+            background-color: cadetblue;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        body {
+            background-image: url("https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 80vh;
+        }
+
+        button {
+            border-radius: 10px;
+            background-color: pink;
+            padding: 10px;
+            margin: 20px;
+            box-shadow: 0 0 20px rgb(169, 169, 236);
+            font-size: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 34px;
+
+        }
+
+        #main:hover {
+            background-color: lightskyblue;
+        }
+
+        button:hover {
+            font-size: 28px;
+
+        }
+
+        #Morning:hover {
+            box-shadow: 0 0 20px rgb(220, 151, 236);
+            background-color: rgb(188, 188, 255);
+            border-radius: 30px;
+        }
+
+        #evening:hover {
+            box-shadow: 0 0 20px rgb(146, 255, 113);
+            background-color: rgb(188, 188, 255);
+            border-radius: 30px;
+        }
+
+        #night:hover {
+            box-shadow: 0 0 20px rgb(0, 0, 0);
+            background-color: rgb(188, 188, 255);
+            border-radius: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(248, 69, 69);
+            font-size: 50px;
+            text-decoration: overline;
+            margin-bottom: 0px;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Just A Wish</h1>
+    <div id="main">
+        <h2 value="Wish Me!!" id="get">Wish Me!!</h2>
+        <button onclick="F1()" id="Morning">Good Morning</button>
+        <button onclick="F2()" id="evening">Good Evening</button>
+        <button onclick="F3()" id="night">Good Night</button>
+    </div>
+    <script>
+        function F1() {
+            var getM = document.getElementById('get');
+            getM.innerText = "Good Morning Yashraj";
+
+        }
+        function F2() {
+            var getE = document.getElementById('get');
+            getE.innerText = "Good Evening Yashraj";
+        }
+        function F3() {
+            var getN = document.getElementById('get');
+            getN.innerText = "Good Night Yashraj";
+        }
+    </script>
+
+</body>
+
+</html>
